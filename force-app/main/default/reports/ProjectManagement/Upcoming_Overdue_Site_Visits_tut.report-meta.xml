@@ -4,13 +4,10 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <field>FK_NAME</field>
-    </columns>
-    <columns>
-        <field>Job__c.Start_Date__c</field>
-    </columns>
-    <columns>
         <field>Job__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
     </columns>
     <columns>
         <field>FK_$Analysis_Meeting__c.Estimator__c</field>
@@ -19,6 +16,7 @@
         <field>Job__c.Address__c</field>
     </columns>
     <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>FK_$Analysis_Meeting__c.Completed__c</column>
             <columnToColumn>false</columnToColumn>
@@ -33,9 +31,21 @@
             <operator>lessOrEqual</operator>
             <value>NEXT_N_WEEKS:2</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Analysis_Meeting__c.Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
     </filter>
-    <format>Tabular</format>
-    <name>Upcoming &amp; Overdue Site Visits</name>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>FK_$Analysis_Meeting__c.Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Upcoming, Overdue, and Unscheduled SVs</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -43,8 +53,8 @@
     <reportType>CustomEntity$Job__c@Job__c.Site_Visit__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <showGrandTotal>true</showGrandTotal>
-    <showSubTotals>true</showSubTotals>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Job__c.Close_Date__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

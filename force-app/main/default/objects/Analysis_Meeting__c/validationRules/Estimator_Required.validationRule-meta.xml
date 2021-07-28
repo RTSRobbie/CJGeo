@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimator_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+RecordType.Name  != &apos;Prebid Meeting&apos;,
+ISBLANK( Estimator__c )
+)</errorConditionFormula>
+    <errorMessage>Please select a Point Person to coordinate this meeting.</errorMessage>
+</ValidationRule>

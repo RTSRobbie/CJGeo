@@ -9,18 +9,17 @@
     </types>
     <types>
         <members>Analysis_Meeting_Handler</members>
-        <members>New_Analysis_Meeting</members>
         <name>Flow</name>
-    </types>
-    <types>
-        <members>Opportunity.New_Job</members>
-        <members>Opportunity.New_Analysis_Meeting</members>
-        <name>QuickAction</name>
     </types>
     <types>
         <members>Job__c.Site_Visit__c</members>
         <members>Job__c.Record_Type__c</members>
         <name>CustomField</name>
+    </types>
+    <types>
+        <members>Opportunity.New_Job</members>
+        <members>Opportunity.New_Precon_Site_Visit</members>
+        <name>QuickAction</name>
     </types>
     <types>
     <!--
