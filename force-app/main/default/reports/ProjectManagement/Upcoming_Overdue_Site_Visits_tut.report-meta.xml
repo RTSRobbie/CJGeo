@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>CUST_NAME</field>
-    </columns>
-    <columns>
-        <field>Job__c.Status__c</field>
-    </columns>
-    <columns>
         <field>FK_NAME</field>
     </columns>
     <columns>
         <field>FK_$Analysis_Meeting__c.Estimator__c</field>
+    </columns>
+    <columns>
+        <field>Job__c.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Job__c.Status__c</field>
     </columns>
     <columns>
         <field>Job__c.Address__c</field>

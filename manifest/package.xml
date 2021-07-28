@@ -13,7 +13,6 @@
     </types>
     <types>
         <members>Job__c.Site_Visit__c</members>
-        <members>Job__c.Record_Type__c</members>
         <name>CustomField</name>
     </types>
     <types>

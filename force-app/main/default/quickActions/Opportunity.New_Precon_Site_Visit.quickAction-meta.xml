@@ -4,6 +4,10 @@
         <field>Estimator__c</field>
         <formula>Opportunity.Project_Manager__c</formula>
     </fieldOverrides>
+    <fieldOverrides>
+        <field>Key_Contact__c</field>
+        <formula>Opportunity.Primary_Contact__c</formula>
+    </fieldOverrides>
     <label>New Precon Site Visit</label>
     <optionsCreateFeedItem>true</optionsCreateFeedItem>
     <quickActionLayout>
